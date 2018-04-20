@@ -36,12 +36,9 @@ while 1 == 1 {
     
     var digit1 = 0
     var processYear = 0
-    if nextYear / 1000 < 10 {
+    if nextYear / 1000 <= 10 {
         digit1 = nextYear / 1000
         processYear = nextYear % 1000
-        
-    } else {
-        
     }
     
     let digit2 = processYear / 100
