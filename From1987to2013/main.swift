@@ -50,22 +50,22 @@ while 1 == 1 {
     let digit4 = processYear / 1
     
     
+    if digit1 == 0 && digit2 == 0 && digit3 == 0 || digit1 == 0 && digit2 == 0 {
+       print("The next year with distinct digits is \(nextYear)")
+        break
+    }
+    
     if digit1 == digit2 || digit1 == digit3 || digit1 == digit4 {
       nextYear += 1
       continue
     }
    
-    if digit2 == digit1 || digit2 == digit3 || digit2 == digit4 {
+    if  digit2 == digit3 || digit2 == digit4 {
         nextYear += 1
         continue
     }
     
-    if digit3 == digit1 || digit3 == digit2 || digit3 == digit4 {
-        nextYear += 1
-        continue
-    }
-    
-    if digit4 == digit1 || digit4 == digit2 || digit4 == digit3 {
+    if  digit3 == digit4 {
         nextYear += 1
         continue
     }
